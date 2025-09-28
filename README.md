@@ -1,7 +1,10 @@
-# Web simulation of UbuntuOS
+# Mayank's Portfolio
 
-This is a personal portfolio website of theme Ubuntu 20.04, made using Next.js & tailwind CSS.
-If you want to edit this. Clone this project and edit the files in `/src/components`.
+This is a personal portfolio website with an Ubuntu 20.04 theme, built using Next.js and Tailwind CSS. The original project was created by Vivek Patel (vivek9patel) and has been customized for Mayank's portfolio.
+
+## Getting Started
+
+To run this project locally:
 
 To run this on localhost
 type `npm start` and when u are done coding type `npm run build` to build your app.
