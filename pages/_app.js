@@ -1,16 +1,21 @@
-import 'tailwindcss/tail.css'
+import 'tailwindcss/tailwind.css'
 import '../styles/index.css'
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
-import * as gtag from '../lib/gtag';
+
+const GA_TRACKING_ID = 'G-0EEBPFMJN4';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      gtag.pageview(url);
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('config', GA_TRACKING_ID, {
+          page_path: url,
+        });
+      }
     };
     
     // When the component is mounted, subscribe to router events
@@ -28,22 +33,21 @@ function MyApp({ Component, pageProps }) {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
       <Script
         id="gtag-init"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <Component {...pageProps} />
     </>
   );
