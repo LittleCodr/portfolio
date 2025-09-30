@@ -13,7 +13,8 @@ export class Gedit extends Component {
     }
 
     componentDidMount() {
-        emailjs.init(process.env.NEXT_PUBLIC_USER_ID);
+        // Initialize EmailJS with your public key
+        emailjs.init('DeVMnnb1zkvXuFF1v');
     }
 
     sendMessage = async () => {
@@ -42,8 +43,8 @@ export class Gedit extends Component {
 
         this.setState({ sending: true });
 
-        const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
-        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+        const serviceID = 'service_vz46lwf';
+        const templateID = 'template_8i60bqj';
         const templateParams = {
             'name': name,
             'subject': subject,
