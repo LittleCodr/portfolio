@@ -1,6 +1,50 @@
 body{
     font-family: 'Ubuntu', sans-serif;
-    font-display: swap
+    font-display: swap;
+    position: relative;
+}
+
+/* Portfolio Protection Watermark */
+.portfolio-watermark {
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    z-index: 9999 !important;
+    opacity: 0.7 !important;
+    pointer-events: none !important;
+    font-size: 12px !important;
+    color: #666666 !important;
+    font-family: monospace !important;
+    user-select: none !important;
+    padding: 5px 10px !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 4px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Unauthorized Copy Warning */
+.unauthorized-warning {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #ff3b30 !important;
+    color: white !important;
+    padding: 10px !important;
+    text-align: center !important;
+    z-index: 10000 !important;
+    font-family: sans-serif !important;
+    font-weight: bold !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.unauthorized-warning a {
+    color: white !important;
+    text-decoration: underline !important;
+    margin-left: 5px !important;
 }
 
 /* Top NavBar styling */

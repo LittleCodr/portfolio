@@ -3,6 +3,7 @@ import '../styles/index.css'
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
+import { initPortfolioProtection } from '../components/utils/portfolioProtection';
 
 const GA_TRACKING_ID = 'G-0EEBPFMJN4';
 
@@ -27,6 +28,11 @@ function MyApp({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  // Initialize portfolio protection
+  useEffect(() => {
+    initPortfolioProtection();
+  }, []);
 
   return (
     <>
