@@ -1,66 +1,76 @@
-# Mayank's Portfolio
+# Mayank Agrawal's Portfolio
 
-This is a personal portfolio website with an Ubuntu 20.04 theme, built using Next.js and Tailwind CSS. The original project was created by Vivek Patel (vivek9patel) and has been customized for Mayank's portfolio.
+Welcome to my personal portfolio website, featuring an Ubuntu 20.04-inspired interface. Built with Next.js and Tailwind CSS, this interactive portfolio showcases my skills, projects, and experience in a unique and engaging way.
 
-## Getting Started
+## 🚀 Features
 
-To run this project locally:
+- **Modern UI/UX** with Ubuntu 20.04 theme
+- **Interactive Terminal** for a command-line like experience
+- **Project Showcase** with detailed descriptions and tech stacks
+- **Responsive Design** that works on all devices
+- **Dark/Light Mode** for comfortable viewing
+- **Contact Form** for easy communication
 
-To run this on localhost
-type `npm start` and when u are done coding type `npm run build` to build your app.
+## 🛠️ Tech Stack
 
-_NOTE: if you have yarn just replace `npm start` and `npm run build` with `yarn start` and `yarn build`._
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Animation**: Framer Motion
+- **Form Handling**: EmailJS
+- **Deployment**: Vercel
 
-<a href="https://www.buymeacoffee.com/vivek9patel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+## 🏁 Getting Started
 
-### To make the contact form work
+### Prerequisites
 
-- Create a account in [emailjs](https://www.emailjs.com/) create also new Outlook or Gmail account to be able
-  to send email.
-- Create a new service, select and log in to your newly created outlook or gmail account on EmailJS.
-- Go back to the dashboard and get the Service ID copy it.
-- Create a .env file in your root folder and put
+- Node.js (v14 or later)
+- npm or yarn
 
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up environment variables
+   Create a `.env` file in the root directory with:
+   ```
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+   NEXT_PUBLIC_EMAILJS_USER_ID=your_user_id
+   ```
+
+4. Run the development server
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## 🚀 Deployment
+
+Build the application for production:
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-NEXT_PUBLIC_USER_ID = 'YOUR_USER_ID'
-NEXT_PUBLIC_TEMPLATE_ID = 'template_fqqqb9g'
-NEXT_PUBLIC_SERVICE_ID = 'YOUR_SERVICE_ID'
+## 📝 License
 
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-into it. Replace \*your user id and your service ID with your values in your EmailJS service.
+## 🙏 Acknowledgments
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vivek9patel/vivek9patel.github.io&type=Date)](https://star-history.com/#vivek9patel/vivek9patel.github.io&Date)
-
-## This project was made using Create Next App! Here is the scripts that u can run.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributiors who wants to make this website better can make contribution,which will be **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Added some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Inspired by the original Ubuntu 20.04 interface
+- Built with Next.js and Tailwind CSS

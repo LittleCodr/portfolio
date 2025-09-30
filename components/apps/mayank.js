@@ -109,22 +109,39 @@ export function displayAboutMayank() {
 function About() {
     return (
         <>
-            <div className="w-20 md:w-28 my-4 bg-white rounded-full">
-                <img className="w-full" src="./images/logos/bitmoji.png" alt="Mayank's Profile" />
+            <div className="w-20 md:w-28 my-4 bg-white rounded-full overflow-hidden">
+                <img 
+                    className="w-full h-full object-cover" 
+                    src="https://avatars.githubusercontent.com/u/121036421" 
+                    alt="Mayank Agrawal's Profile" 
+                />
             </div>
-            <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
-                <div>my name is <span className="font-bold">Mayank</span> ,</div>
-                <div className="font-normal ml-1">I'm a <span className="text-pink-600 font-bold">Software Developer!</span></div>
+            <div className="mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
+                <div>Hello, I'm <span className="font-bold">Mayank Agrawal</span></div>
+                <div className="font-normal">
+                    <span className="text-ub-orange font-bold">iOS & Android Developer</span> | 
+                    <span className="text-blue-400"> Full Stack Engineer</span>
+                </div>
+                <div className="text-sm text-gray-400 mt-1">Microsoft Learn Ambassador</div>
             </div>
-            <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
+            <div className="mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
             </div>
-            <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-                <li className=" list-pc">I'm a <span className=" font-medium">Software Developer</span> with experience in building web applications. I'm passionate about creating efficient and user-friendly software solutions.</li>
-                <li className=" mt-3 list-building"> I enjoy building awesome softwares that solve practical problems.</li>
-                <li className=" mt-3 list-time"> When I'm not coding, I like to spend my time exploring new technologies, contributing to open source, and learning new skills.</li>
-                <li className=" mt-3 list-star"> I'm particularly interested in Full Stack Development and Cloud Technologies!</li>
+            <ul className="mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
+                <li className="list-pc">
+                    I'm a <span className="font-medium">Mobile & Full Stack Developer</span> with expertise in building cross-platform applications. 
+                    Passionate about creating efficient and user-friendly software solutions.
+                </li>
+                <li className="mt-3 list-building">
+                    I specialize in iOS (Swift) & Android (Java) Development, with strong skills in React and Node.js for full-stack applications.
+                </li>
+                <li className="mt-3 list-time">
+                    As a Microsoft Learn Ambassador, I enjoy sharing knowledge and contributing to the developer community.
+                </li>
+                <li className="mt-3 list-star">
+                    I'm particularly interested in building scalable and performant applications with clean architecture and best practices.
+                </li>
             </ul>
         </>
     )
@@ -134,19 +151,33 @@ function Education() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
             <div className="text-xl md:text-2xl font-bold">Education</div>
-            <div className="mt-4">
+            
+            <div className="mt-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div>
-                        <div className="text-lg md:text-xl font-semibold">Your University Name</div>
-                        <div className="text-sm md:text-base text-gray-300">Degree in Computer Science</div>
+                        <div className="text-lg md:text-xl font-semibold">GLA University, Mathura</div>
+                        <div className="text-sm md:text-base text-gray-300">Bachelor of Technology in Computer Science & Engineering</div>
+                    </div>
+                    <div className="text-sm md:text-base text-gray-400">2020 - 2024</div>
+                </div>
+                <div className="mt-2 text-sm md:text-base">
+                    <p>Relevant coursework: Data Structures, Algorithms, Operating Systems, Database Management, Web Development, Mobile Application Development</p>
+                    <p className="mt-1">CGPA: [Your CGPA] / 10.0</p>
+                </div>
+            </div>
+
+            <div className="mt-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <div className="text-lg md:text-xl font-semibold">Senior Secondary Education</div>
+                        <div className="text-sm md:text-base text-gray-300">[Your School Name], [City]</div>
                     </div>
                     <div className="text-sm md:text-base text-gray-400">Year - Year</div>
                 </div>
                 <div className="mt-2 text-sm md:text-base">
-                    <p>Relevant coursework: Data Structures, Algorithms, Web Development, etc.</p>
+                    <p>Board: [Your Board] | Percentage: [Your Percentage]%</p>
                 </div>
             </div>
-            {/* Add more education entries as needed */}
         </div>
     )
 }
@@ -154,30 +185,68 @@ function Education() {
 function Skills() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
-            <div className="text-xl md:text-2xl font-bold">Skills</div>
-            <div className="mt-4">
-                <div className="text-lg md:text-xl font-semibold mb-2">Programming Languages</div>
+            <div className="text-xl md:text-2xl font-bold">Technical Skills</div>
+            
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Mobile Development</div>
                 <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">JavaScript</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Python</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Java</span>
-                    {/* Add more skills as needed */}
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">iOS (Swift)</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Android (Java/Kotlin)</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">React Native</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Flutter</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">SwiftUI</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Core Data</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Firebase</span>
                 </div>
-                
-                <div className="text-lg md:text-xl font-semibold mt-4 mb-2">Frameworks & Libraries</div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Frontend Development</div>
                 <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">React</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">React.js</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Next.js</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">JavaScript (ES6+)</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">TypeScript</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">HTML5 & CSS3</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Tailwind CSS</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Redux</span>
+                </div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Backend & Databases</div>
+                <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Node.js</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Express</span>
-                    {/* Add more frameworks as needed */}
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Express.js</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">MongoDB</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">PostgreSQL</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">RESTful APIs</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">GraphQL</span>
                 </div>
-                
-                <div className="text-lg md:text-xl font-semibold mt-4 mb-2">Tools & Technologies</div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Tools & Technologies</div>
                 <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Git</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Git & GitHub</span>
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Docker</span>
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">AWS</span>
-                    {/* Add more tools as needed */}
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">CI/CD</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Postman</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">VS Code</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Xcode</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Android Studio</span>
+                </div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Soft Skills</div>
+                <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Problem Solving</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Team Collaboration</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Agile Development</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Technical Writing</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Public Speaking</span>
                 </div>
             </div>
         </div>
@@ -187,35 +256,85 @@ function Skills() {
 function Projects() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
-            <div className="text-xl md:text-2xl font-bold">Projects</div>
+            <div className="text-xl md:text-2xl font-bold">Featured Projects</div>
+            <p className="text-gray-400 text-sm mt-1 mb-4">Check out more of my work at <a href="https://mayank1406.pro/projects" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline">mayank1406.pro/projects</a></p>
+            
             <div className="mt-4 space-y-6">
-                <div className="border border-gray-700 rounded p-4">
+                <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">Project Name 1</div>
-                            <div className="text-sm text-gray-400">Tech Stack: React, Node.js, MongoDB</div>
+                            <div className="text-lg md:text-xl font-semibold">iOS Task Manager</div>
+                            <div className="text-sm text-gray-400">Tech Stack: Swift, SwiftUI, Core Data, CloudKit</div>
                         </div>
-                        <a href="#" className="text-ub-orange hover:underline text-sm">View Project</a>
+                        <div className="flex space-x-2">
+                            <a href="#" className="text-ub-orange hover:underline text-sm flex items-center">
+                                <span>View on GitHub</span>
+                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        A brief description of the project and its key features. What problem does it solve? What technologies did you use?
+                        A modern task management application for iOS built with SwiftUI, featuring iCloud sync, rich text notes, and custom categories.
                     </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">SwiftUI</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Core Data</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">CloudKit</span>
+                    </div>
                 </div>
-                
-                <div className="border border-gray-700 rounded p-4">
+
+                <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">Project Name 2</div>
-                            <div className="text-sm text-gray-400">Tech Stack: Python, Flask, PostgreSQL</div>
+                            <div className="text-lg md:text-xl font-semibold">E-commerce Mobile App</div>
+                            <div className="text-sm text-gray-400">Tech Stack: React Native, Node.js, MongoDB, Firebase</div>
                         </div>
-                        <a href="#" className="text-ub-orange hover:underline text-sm">View Project</a>
+                        <div className="flex space-x-2">
+                            <a href="#" className="text-ub-orange hover:underline text-sm flex items-center">
+                                <span>View on GitHub</span>
+                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        Another project description highlighting your skills and contributions.
+                        A cross-platform e-commerce application with real-time inventory, payment integration, and admin dashboard.
                     </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">React Native</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Node.js</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">MongoDB</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Firebase</span>
+                    </div>
                 </div>
-                
-                {/* Add more projects as needed */}
+
+                <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <div className="text-lg md:text-xl font-semibold">Developer Portfolio</div>
+                            <div className="text-sm text-gray-400">Tech Stack: Next.js, Tailwind CSS, Vercel</div>
+                        </div>
+                        <div className="flex space-x-2">
+                            <a href="https://mayank1406.pro" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline text-sm flex items-center">
+                                <span>Live Demo</span>
+                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p className="mt-2 text-sm md:text-base">
+                        A responsive portfolio website showcasing my projects, skills, and experience as a developer.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Next.js</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Tailwind CSS</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Vercel</span>
+                    </div>
+                </div>
             </div>
         </div>
     )
@@ -223,10 +342,106 @@ function Projects() {
 
 function Resume() {
     return (
-        <div className="w-full h-full flex items-center justify-center">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-ub-orange text-white rounded hover:bg-opacity-90 transition-colors">
-                Download Resume
-            </a>
+        <div className="w-full px-1 md:px-4 py-2">
+            <div className="text-xl md:text-2xl font-bold mb-4">My Resume</div>
+            
+            <div className="space-y-6">
+                <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div>
+                            <h2 className="text-2xl font-bold text-white">Mayank Agrawal</h2>
+                            <p className="text-gray-300">iOS & Android Developer | Full Stack Engineer</p>
+                        </div>
+                        <a 
+                            href="https://mayank1406.pro/resume.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="mt-4 md:mt-0 inline-flex items-center px-6 py-3 bg-ub-orange text-white rounded-lg hover:bg-opacity-90 transition-colors"
+                        >
+                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            Download Full Resume (PDF)
+                        </a>
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-6 mt-6">
+                        <h3 className="text-xl font-semibold mb-4 text-ub-orange">Professional Experience</h3>
+                        
+                        <div className="mb-6">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">iOS Developer</h4>
+                                    <p className="text-gray-300">Tech Company • Full-time</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">2022 - Present</span>
+                            </div>
+                            <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
+                                <li>Developed and maintained iOS applications using Swift and SwiftUI</li>
+                                <li>Collaborated with cross-functional teams to define, design, and ship new features</li>
+                                <li>Implemented clean architecture and best practices for mobile development</li>
+                                <li>Optimized app performance and reduced crash rates by 40%</li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-6">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">Full Stack Developer</h4>
+                                    <p className="text-gray-300">Startup • Internship</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">2021 - 2022</span>
+                            </div>
+                            <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
+                                <li>Built responsive web applications using React, Node.js, and MongoDB</li>
+                                <li>Implemented RESTful APIs and integrated third-party services</li>
+                                <li>Participated in code reviews and team meetings</li>
+                                <li>Contributed to the development of new features and bug fixes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-6 mt-6">
+                        <h3 className="text-xl font-semibold mb-4 text-ub-orange">Education</h3>
+                        <div className="mb-4">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">GLA University, Mathura</h4>
+                                    <p className="text-gray-300">Bachelor of Technology in Computer Science & Engineering</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">2020 - 2024</span>
+                            </div>
+                            <p className="mt-1 text-gray-300 text-sm">CGPA: [Your CGPA] / 10.0</p>
+                        </div>
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-6 mt-6">
+                        <h3 className="text-xl font-semibold mb-4 text-ub-orange">Skills</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 className="font-medium text-gray-200 mb-2">Mobile Development</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Swift</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">SwiftUI</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">React Native</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Java</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Kotlin</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="font-medium text-gray-200 mb-2">Web Development</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Next.js</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Node.js</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Express</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

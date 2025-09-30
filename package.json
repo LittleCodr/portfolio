@@ -1,8 +1,14 @@
 {
-  "name": "mayank-portfolio",
+  "name": "mayank-agrawal-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/",
+  "homepage": "https://mayank1406.pro/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LittleCodr/portfolio.git"
+  },
+  "author": "Mayank Agrawal <littlecodr@gmail.com> (https://mayank1406.pro)",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
