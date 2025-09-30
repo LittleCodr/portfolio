@@ -102,14 +102,14 @@ const apps = [
         screen: () => {},
     },
     {
-        id: "tars",
-        title: "Ask Tars",
+        id: "vidhyaai",
+        title: "VidhyaAI",
         icon: './themes/Yaru/apps/tars.svg',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://mayank1406.pro"
+        url: "https://mayank1406.pro/vidhyaai"
     },
 ]
 
