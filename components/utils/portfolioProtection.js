@@ -1,12 +1,8 @@
-// Portfolio Protection Script
-// This script adds protection and watermarking to the portfolio
 
-// Configuration
 const config = {
   owner: 'Mayank Agrawal',
   portfolioUrl: 'https://littlecodr.github.io/portfolio',
   email: 'littlecodr@gmail.com',
-  // List of authorized domains where protection should be disabled
   authorizedDomains: [
     'mayank0108.netlify.app',
     'mayank1406.pro',
@@ -18,9 +14,7 @@ const config = {
   consoleStyle: 'color: #4CAF50; font-weight: bold; font-size: 12px;'
 };
 
-// Add watermark to the page
 function addWatermark() {
-  // Create watermark container
   const watermark = document.createElement('div');
   Object.assign(watermark.style, {
     position: 'fixed',
@@ -39,15 +33,12 @@ function addWatermark() {
     border: '1px solid #e0e0e0'
   });
   
-  // Add watermark text
   const text = document.createElement('span');
   text.textContent = config.watermarkText;
   watermark.appendChild(text);
   
-  // Add to body
   document.body.appendChild(watermark);
   
-  // Make it harder to remove
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (!document.body.contains(watermark)) {
@@ -58,18 +49,14 @@ function addWatermark() {
   
   observer.observe(document.body, { childList: true });
   
-  // Add right-click protection
   document.addEventListener('contextmenu', (e) => {
-    // Allow right-click for accessibility
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
       return;
     }
     e.preventDefault();
   });
   
-  // Disable keyboard shortcuts
   document.addEventListener('keydown', (e) => {
-    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
     if (
       e.key === 'F12' ||
       (e.ctrlKey && e.shiftKey && e.key === 'I') ||
@@ -81,11 +68,9 @@ function addWatermark() {
   });
 }
 
-// Add console message
 function addConsoleMessage() {
   console.log(config.consoleMessage, config.consoleStyle);
   
-  // Add a more visible warning if someone tries to open dev tools
   let devtoolsOpen = false;
   const devtools = {
     isOpen: false,
@@ -154,35 +139,27 @@ export function initPortfolioProtection() {
   // Add meta tag to prevent indexing if not on an authorized domain
   if (!isAuthorizedDomain() && window.location.hostname !== 'littlecodr.github.io') {
     const meta = document.createElement('meta');
-    meta.name = 'robots';
     meta.content = 'noindex, nofollow';
     document.head.appendChild(meta);
     
     // Show a warning message
     const warning = document.createElement('div');
-    warning.style.position = 'fixed';
-    warning.style.top = '0';
-    warning.style.left = '0';
-    warning.style.right = '0';
-    warning.style.backgroundColor = '#ff3b30';
-    warning.style.color = 'white';
-    warning.style.padding = '10px';
-    warning.style.textAlign = 'center';
-    warning.style.zIndex = '10000';
-    warning.style.fontFamily = 'sans-serif';
-    warning.style.fontWeight = 'bold';
-    warning.textContent = '⚠️ This is an unauthorized copy of Mayank Agrawal\'s portfolio. ';
+    warning.className = 'unauthorized-warning';
+    
+    const warningText = document.createElement('span');
+    warningText.textContent = '⚠️ This is an unauthorized copy of Mayank Agrawal\'s portfolio. ';
     
     const link = document.createElement('a');
-    link.href = 'https://littlecodr.github.io/portfolio';
-    link.textContent = 'Visit the original portfolio here';
-    link.style.color = 'white';
-    link.style.textDecoration = 'underline';
+    link.href = 'https://mayank1406.pro';
+    link.textContent = 'Visit the official portfolio here';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
     
+    warning.appendChild(warningText);
     warning.appendChild(link);
+    
     document.body.prepend(warning);
   }
 }
-
 // Export the config for other components to use
 export const portfolioConfig = config;
