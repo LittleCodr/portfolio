@@ -524,7 +524,7 @@ export class Desktop extends Component {
 
                 {/* Context Menus */}
                 <DesktopMenu active={this.state.context_menus.desktop} openApp={this.openApp} addNewFolder={this.addNewFolder} />
-                <DefaultMenu active={this.state.context_menus.default} />
+                <DefaultMenu active={this.state.context_menus.default} openApp={this.openApp} />
 
                 {/* Folder Input Name Bar */}
                 {
