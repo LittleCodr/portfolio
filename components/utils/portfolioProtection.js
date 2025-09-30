@@ -6,6 +6,13 @@ const config = {
   owner: 'Mayank Agrawal',
   portfolioUrl: 'https://littlecodr.github.io/portfolio',
   email: 'littlecodr@gmail.com',
+  // List of authorized domains where protection should be disabled
+  authorizedDomains: [
+    'mayank0108.netlify.app',
+    'mayank1406.pro',
+    'localhost',
+    '127.0.0.1'
+  ],
   watermarkText: '© Mayank Agrawal | littlecodr.github.io/portfolio',
   consoleMessage: `%c🔒 Portfolio Protection Active 🔒\n\nThis portfolio belongs to Mayank Agrawal (LittleCodr).\nPlease respect the owner's work and do not copy without permission.\n\nContact: littlecodr@gmail.com\n`,
   consoleStyle: 'color: #4CAF50; font-weight: bold; font-size: 12px;'
@@ -116,8 +123,23 @@ function addConsoleMessage() {
   }, 500);
 }
 
+// Check if current domain is authorized
+function isAuthorizedDomain() {
+  const currentHostname = window.location.hostname;
+  return config.authorizedDomains.some(domain => 
+    currentHostname === domain || 
+    currentHostname.endsWith('.' + domain)
+  );
+}
+
 // Initialize protection
 export function initPortfolioProtection() {
+  // Skip protection for authorized domains
+  if (isAuthorizedDomain()) {
+    console.log('%c✅ Authorized domain detected - Protection disabled', 'color: #4CAF50; font-weight: bold');
+    return;
+  }
+
   // Wait for DOM to be fully loaded
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
@@ -129,8 +151,8 @@ export function initPortfolioProtection() {
     addConsoleMessage();
   }
   
-  // Add meta tag to prevent indexing if not on the main domain
-  if (window.location.hostname !== 'littlecodr.github.io') {
+  // Add meta tag to prevent indexing if not on an authorized domain
+  if (!isAuthorizedDomain() && window.location.hostname !== 'littlecodr.github.io') {
     const meta = document.createElement('meta');
     meta.name = 'robots';
     meta.content = 'noindex, nofollow';
