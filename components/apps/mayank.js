@@ -151,31 +151,37 @@ function Education() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
             <div className="text-xl md:text-2xl font-bold">Education</div>
-            
+
             <div className="mt-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div>
-                        <div className="text-lg md:text-xl font-semibold">GLA University, Mathura</div>
-                        <div className="text-sm md:text-base text-gray-300">Bachelor of Technology in Computer Science & Engineering</div>
+                        <div className="text-lg md:text-xl font-semibold">GLA University</div>
+                        <div className="text-sm md:text-base text-gray-300">Bachelor's of Technology</div>
+                        <div className="text-sm md:text-base text-gray-300">Artificial Intelligence & Machine Learning</div>
                     </div>
-                    <div className="text-sm md:text-base text-gray-400">2020 - 2024</div>
-                </div>
-                <div className="mt-2 text-sm md:text-base">
-                    <p>Relevant coursework: Data Structures, Algorithms, Operating Systems, Database Management, Web Development, Mobile Application Development</p>
-                    <p className="mt-1">CGPA: [Your CGPA] / 10.0</p>
+                    <div className="text-sm md:text-base text-gray-400">August 2024 - September 2028</div>
                 </div>
             </div>
 
             <div className="mt-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div>
-                        <div className="text-lg md:text-xl font-semibold">Senior Secondary Education</div>
-                        <div className="text-sm md:text-base text-gray-300">[Your School Name], [City]</div>
+                        <div className="text-lg md:text-xl font-semibold">Babu Daudayal Saraswati Vidhya Mandir</div>
+                        <div className="text-sm md:text-base text-gray-300">All India Senior School Certificate Examination</div>
+                        <div className="text-sm md:text-base text-gray-300">Class 12th (Science)</div>
                     </div>
-                    <div className="text-sm md:text-base text-gray-400">Year - Year</div>
+                    <div className="text-sm md:text-base text-gray-400">April 2023 - February 2024</div>
                 </div>
-                <div className="mt-2 text-sm md:text-base">
-                    <p>Board: [Your Board] | Percentage: [Your Percentage]%</p>
+            </div>
+
+            <div className="mt-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <div className="text-lg md:text-xl font-semibold">Shriji Baba Saraswati Vidya Mandir</div>
+                        <div className="text-sm md:text-base text-gray-300">All India Senior Secondary Examination</div>
+                        <div className="text-sm md:text-base text-gray-300">Class 10th</div>
+                    </div>
+                    <div className="text-sm md:text-base text-gray-400">April 2017 - March 2023</div>
                 </div>
             </div>
         </div>
@@ -257,82 +263,59 @@ function Projects() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
             <div className="text-xl md:text-2xl font-bold">Featured Projects</div>
-            <p className="text-gray-400 text-sm mt-1 mb-4">Check out more of my work at <a href="https://mayank1406.pro/projects" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline">mayank1406.pro/projects</a></p>
-            
+            <p className="text-gray-400 text-sm mt-1 mb-4">More projects check : <a href="https://mayank1406.pro/projects" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline">https://mayank1406.pro/projects</a></p>
+
             <div className="mt-4 space-y-6">
                 <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">iOS Task Manager</div>
-                            <div className="text-sm text-gray-400">Tech Stack: Swift, SwiftUI, Core Data, CloudKit</div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <a href="#" className="text-ub-orange hover:underline text-sm flex items-center">
-                                <span>View on GitHub</span>
-                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
+                            <div className="text-lg md:text-xl font-semibold">GestureVoice-Automation</div>
+                            <div className="text-sm text-gray-400">🚀 Control your PC using hand gestures, face movements, and voice commands!</div>
                         </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        A modern task management application for iOS built with SwiftUI, featuring iCloud sync, rich text notes, and custom categories.
+                        Move your cursor with hand tracking, adjust brightness with gestures, and control volume by nodding.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">SwiftUI</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Core Data</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">CloudKit</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Hand Tracking</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Computer Vision</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Voice Commands</span>
                     </div>
                 </div>
 
                 <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">E-commerce Mobile App</div>
-                            <div className="text-sm text-gray-400">Tech Stack: React Native, Node.js, MongoDB, Firebase</div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <a href="#" className="text-ub-orange hover:underline text-sm flex items-center">
-                                <span>View on GitHub</span>
-                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
+                            <div className="text-lg md:text-xl font-semibold">AI Travel Itinerary Generator</div>
+                            <div className="text-sm text-gray-400">Tech Stack: React, TypeScript, Google's Gemini AI</div>
                         </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        A cross-platform e-commerce application with real-time inventory, payment integration, and admin dashboard.
+                        A modern, AI-powered travel itinerary generator that creates personalized trip plans using Google's Gemini AI. Built with React, TypeScript, and featuring a unique Neobrutalism design aesthetic.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">React Native</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Node.js</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">MongoDB</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Firebase</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">React</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">TypeScript</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Gemini AI</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Neobrutalism</span>
                     </div>
                 </div>
 
                 <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">Developer Portfolio</div>
-                            <div className="text-sm text-gray-400">Tech Stack: Next.js, Tailwind CSS, Vercel</div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <a href="https://mayank1406.pro" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline text-sm flex items-center">
-                                <span>Live Demo</span>
-                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
+                            <div className="text-lg md:text-xl font-semibold">AI Article Generator</div>
+                            <div className="text-sm text-gray-400">Tech Stack: GPT-4, Puter.ai SDK, JSON/HTML Processing</div>
                         </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        A responsive portfolio website showcasing my projects, skills, and experience as a developer.
+                        AI Article Generation works by: Collecting the keyword, Sending a prompt to GPT-4 through Puter.ai's SDK, Strictly requiring valid JSON/HTML output from the model, Parsing and displaying the output with custom formatting.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Next.js</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Tailwind CSS</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Vercel</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">GPT-4</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Puter.ai SDK</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">JSON Processing</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">HTML Parsing</span>
                     </div>
                 </div>
             </div>
