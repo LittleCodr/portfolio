@@ -1,3 +1,4 @@
+// Repo refreshed on 2025-11-15
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {

@@ -1,3 +1,4 @@
+// Repo refreshed on 2025-11-15
 module.exports = {
   mode: 'jit',
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],

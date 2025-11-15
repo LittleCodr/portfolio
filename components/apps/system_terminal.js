@@ -1,3 +1,4 @@
+// Repo refreshed on 2025-11-15
 import React, { useRef, useEffect, useState } from 'react';
 
 const SystemTerminal = ({ onClose }) => {
