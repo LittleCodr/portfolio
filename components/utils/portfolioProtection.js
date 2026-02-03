@@ -7,6 +7,7 @@ const config = {
   authorizedDomains: [
     'mayank0108.netlify.app',
     'mayank1406.pro',
+    'heymayank.in',
     'localhost',
     '127.0.0.1'
   ],
