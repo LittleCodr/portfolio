@@ -1,5 +1,5 @@
 <!-- Repo refreshed on 2025-11-15 -->
-# 🖥️ Mayank Agrawal's Portfolio
+# 🖥️ Akshita Rawat's Portfolio
 
 <div align="center">
   <img src="./public/images/logos/logo.png" alt="Portfolio Logo" width="120px" />
@@ -11,7 +11,7 @@
 
   **A unique, interactive portfolio website with an Ubuntu 20.04-inspired interface**
   
-  [Live Demo](https://mayank1406.pro/) • [Report Bug](https://github.com/LittleCodr/portfolio/issues) • [Request Feature](https://github.com/LittleCodr/portfolio/issues)
+   [Live Demo](https://rentits.in/) • [Report Bug](https://github.com/LittleCodr/portfolio/issues) • [Request Feature](https://github.com/LittleCodr/portfolio/issues)
 </div>
 
 ---
@@ -60,7 +60,7 @@ This is my personal portfolio website featuring an **Ubuntu 20.04-inspired deskt
 
 ### 📱 Applications
 - **Terminal**: Interactive command-line interface with custom commands
-  - `about-mayank`: Display information about me
+   - `about-akshita`: Display information about me
   - `cd`, `ls`, `pwd`: Navigate through virtual file system
   - `code`: Open VS Code with my GitHub repository
   - `chrome`: Open browser with my website
@@ -179,7 +179,7 @@ The integrated terminal supports the following commands:
 
 | Command | Description |
 |---------|-------------|
-| `about-mayank` | Display information about me |
+| `about-akshita` | Display information about me |
 | `ls` | List files in current directory |
 | `cd <dir>` | Change directory |
 | `pwd` | Print working directory |
@@ -286,9 +286,9 @@ portfolio/
 
 ### Updating Personal Information
 
-1. **About Section**: Edit `components/apps/mayank.js`
-2. **Projects**: Update project data in `components/apps/mayank.js`
-3. **Skills**: Modify skills section in `components/apps/mayank.js`
+1. **About Section**: Edit `components/apps/akshita.js`
+2. **Projects**: Update project data in `components/apps/akshita.js`
+3. **Skills**: Modify skills section in `components/apps/akshita.js`
 4. **Social Links**: Update URLs in `apps.config.js`
 
 ### Changing Theme Colors
@@ -331,17 +331,17 @@ Contributions, issues, and feature requests are welcome!
 
 This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
-Copyright (c) 2024 Mayank Agrawal
+Copyright (c) 2024 Akshita Rawat
 
 ---
 
 ## 📧 Contact
 
-**Mayank Agrawal** - iOS & Android Developer | Full Stack Engineer
+**Akshita Rawat** - iOS & Android Developer | Full Stack Engineer
 
-- 🌐 Website: [mayank1406.pro](https://mayank1406.pro/)
+- 🌐 Website: [rentits.in](https://rentits.in/)
 - 📧 Email: [littlecodr@gmail.com](mailto:littlecodr@gmail.com)
-- 💼 LinkedIn: [@mayank1406](https://linkedin.com/in/mayank1406)
+- 💼 LinkedIn: [Rentits](https://rentits.in/)
 - 🐙 GitHub: [@LittleCodr](https://github.com/LittleCodr)
 - 🐦 Twitter: [@mindflayer_69](https://twitter.com/mindflayer_69)
 
@@ -364,6 +364,8 @@ Copyright (c) 2024 Mayank Agrawal
   
   **⭐ Star this repository if you found it helpful! ⭐**
   
-  Made with ❤️ by [Mayank Agrawal](https://mayank1406.pro/)
+   Made with ❤️ by [Akshita Rawat](https://rentits.in/)
   
 </div>
+#   p o r t f o l i o  
+ 
