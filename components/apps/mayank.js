@@ -120,10 +120,10 @@ function About() {
             <div className="mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
                 <div>Hello, I'm <span className="font-bold">Mayank Agrawal</span></div>
                 <div className="font-normal">
-                    <span className="text-ub-orange font-bold">iOS & Android Developer</span> | 
-                    <span className="text-blue-400"> Full Stack Engineer</span>
+                    <span className="text-ub-orange font-bold">Founding Developer</span> | 
+                    <span className="text-blue-400"> CS Undergraduate</span>
                 </div>
-                <div className="text-sm text-gray-400 mt-1">Microsoft Learn Ambassador</div>
+                <div className="text-sm text-gray-400 mt-1">Mobile, AI/ML, and cloud-focused engineer</div>
             </div>
             <div className="mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
@@ -131,17 +131,16 @@ function About() {
             </div>
             <ul className="mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
                 <li className="list-pc">
-                    I'm a <span className="font-medium">Mobile & Full Stack Developer</span> with expertise in building cross-platform applications. 
-                    Passionate about creating efficient and user-friendly software solutions.
+                    Founding Developer and <span className="font-medium">Computer Science undergraduate</span> shipping production mobile apps end-to-end—from architecture to deployment.
                 </li>
                 <li className="mt-3 list-building">
-                    I specialize in iOS (Swift) & Android (Java) Development, with strong skills in React and Node.js for full-stack applications.
+                    Integrate <span className="font-medium">LLM-based features</span> into real-world products and build scalable full-stack systems.
                 </li>
                 <li className="mt-3 list-time">
-                    As a Microsoft Learn Ambassador, I enjoy sharing knowledge and contributing to the developer community.
+                    Comfortable owning the stack: Flutter, native iOS/Android, cloud (Azure, Firebase, GCP), CI/CD, and analytics.
                 </li>
                 <li className="mt-3 list-star">
-                    I'm particularly interested in building scalable and performant applications with clean architecture and best practices.
+                    Enjoy mentoring and collaborating—previously a Microsoft Learn Student Ambassador delivering workshops and guidance.
                 </li>
             </ul>
         </>
@@ -157,10 +156,10 @@ function Education() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div>
                         <div className="text-lg md:text-xl font-semibold">GLA University</div>
-                        <div className="text-sm md:text-base text-gray-300">Bachelor's of Technology</div>
+                        <div className="text-sm md:text-base text-gray-300">Bachelor of Technology (B.Tech) – Computer Science</div>
                         <div className="text-sm md:text-base text-gray-300">Artificial Intelligence & Machine Learning</div>
                     </div>
-                    <div className="text-sm md:text-base text-gray-400">August 2024 - September 2028</div>
+                    <div className="text-sm md:text-base text-gray-400">August 2024 - September 2028 (Expected)</div>
                 </div>
             </div>
 
@@ -168,21 +167,10 @@ function Education() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div>
                         <div className="text-lg md:text-xl font-semibold">Babu Daudayal Saraswati Vidhya Mandir</div>
+                        <div className="text-sm md:text-base text-gray-300">Class 12th – Science Stream</div>
                         <div className="text-sm md:text-base text-gray-300">All India Senior School Certificate Examination</div>
-                        <div className="text-sm md:text-base text-gray-300">Class 12th (Science)</div>
                     </div>
-                    <div className="text-sm md:text-base text-gray-400">April 2023 - February 2024</div>
-                </div>
-            </div>
-
-            <div className="mt-6">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-                    <div>
-                        <div className="text-lg md:text-xl font-semibold">Shriji Baba Saraswati Vidya Mandir</div>
-                        <div className="text-sm md:text-base text-gray-300">All India Senior Secondary Examination</div>
-                        <div className="text-sm md:text-base text-gray-300">Class 10th</div>
-                    </div>
-                    <div className="text-sm md:text-base text-gray-400">April 2017 - March 2023</div>
+                    <div className="text-sm md:text-base text-gray-400">Completed 2024</div>
                 </div>
             </div>
         </div>
@@ -195,65 +183,44 @@ function Skills() {
             <div className="text-xl md:text-2xl font-bold">Technical Skills</div>
             
             <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Languages</div>
+                <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Python</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Dart</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">JavaScript</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">SQL</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">C++</span>
+                </div>
+            </div>
+
+            <div className="mt-6">
                 <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Mobile Development</div>
                 <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">iOS (Swift)</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Android (Java/Kotlin)</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">React Native</span>
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Flutter</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">SwiftUI</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Core Data</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">iOS (Swift)</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Android (Kotlin/Java)</span>
+                </div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">AI / ML</div>
+                <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Large Language Models (LLMs)</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">NLP</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Supervised Learning</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Prompt Engineering</span>
+                </div>
+            </div>
+
+            <div className="mt-6">
+                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Cloud & Tools</div>
+                <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Microsoft Azure</span>
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Firebase</span>
-                </div>
-            </div>
-
-            <div className="mt-6">
-                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Frontend Development</div>
-                <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">React.js</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Next.js</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">JavaScript (ES6+)</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">TypeScript</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">HTML5 & CSS3</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Tailwind CSS</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Redux</span>
-                </div>
-            </div>
-
-            <div className="mt-6">
-                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Backend & Databases</div>
-                <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Node.js</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Express.js</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">MongoDB</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">PostgreSQL</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">RESTful APIs</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">GraphQL</span>
-                </div>
-            </div>
-
-            <div className="mt-6">
-                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Tools & Technologies</div>
-                <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Git & GitHub</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Docker</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">AWS</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Google Cloud Platform</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Git</span>
+                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">GitHub</span>
                     <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">CI/CD</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Postman</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">VS Code</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Xcode</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Android Studio</span>
-                </div>
-            </div>
-
-            <div className="mt-6">
-                <div className="text-lg md:text-xl font-semibold mb-3 text-ub-orange">Soft Skills</div>
-                <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Problem Solving</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Team Collaboration</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Agile Development</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Technical Writing</span>
-                    <span className="px-3 py-1 bg-ub-orange bg-opacity-20 text-sm rounded-full">Public Speaking</span>
                 </div>
             </div>
         </div>
@@ -263,60 +230,24 @@ function Skills() {
 function Projects() {
     return (
         <div className="w-full px-1 md:px-4 py-2">
-            <div className="text-xl md:text-2xl font-bold">Featured Projects</div>
-            <p className="text-gray-400 text-sm mt-1 mb-4">More projects check : <a href="https://mayank1406.pro/projects" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline">https://mayank1406.pro/projects</a></p>
+            <div className="text-xl md:text-2xl font-bold">Key Projects</div>
+            <p className="text-gray-400 text-sm mt-1 mb-4">More work on <a href="https://mayank1406.pro/projects" target="_blank" rel="noopener noreferrer" className="text-ub-orange hover:underline">mayank1406.pro/projects</a></p>
 
             <div className="mt-4 space-y-6">
                 <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
                     <div className="flex justify-between items-start">
                         <div>
-                            <div className="text-lg md:text-xl font-semibold">GestureVoice-Automation</div>
-                            <div className="text-sm text-gray-400">🚀 Control your PC using hand gestures, face movements, and voice commands!</div>
+                            <div className="text-lg md:text-xl font-semibold">Financial Options Strategies Tool</div>
+                            <div className="text-sm text-gray-400">Python • Pandas • NumPy</div>
                         </div>
                     </div>
                     <p className="mt-2 text-sm md:text-base">
-                        Move your cursor with hand tracking, adjust brightness with gestures, and control volume by nodding.
+                        CLI tool to backtest options trading strategies on historical market data with statistical analysis for risk and performance comparisons.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Hand Tracking</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Computer Vision</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Voice Commands</span>
-                    </div>
-                </div>
-
-                <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
-                    <div className="flex justify-between items-start">
-                        <div>
-                            <div className="text-lg md:text-xl font-semibold">AI Travel Itinerary Generator</div>
-                            <div className="text-sm text-gray-400">Tech Stack: React, TypeScript, Google's Gemini AI</div>
-                        </div>
-                    </div>
-                    <p className="mt-2 text-sm md:text-base">
-                        A modern, AI-powered travel itinerary generator that creates personalized trip plans using Google's Gemini AI. Built with React, TypeScript, and featuring a unique Neobrutalism design aesthetic.
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">React</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">TypeScript</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Gemini AI</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Neobrutalism</span>
-                    </div>
-                </div>
-
-                <div className="border border-gray-700 rounded-lg p-4 hover:border-ub-orange transition-colors duration-300">
-                    <div className="flex justify-between items-start">
-                        <div>
-                            <div className="text-lg md:text-xl font-semibold">AI Article Generator</div>
-                            <div className="text-sm text-gray-400">Tech Stack: GPT-4, Puter.ai SDK, JSON/HTML Processing</div>
-                        </div>
-                    </div>
-                    <p className="mt-2 text-sm md:text-base">
-                        AI Article Generation works by: Collecting the keyword, Sending a prompt to GPT-4 through Puter.ai's SDK, Strictly requiring valid JSON/HTML output from the model, Parsing and displaying the output with custom formatting.
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">GPT-4</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Puter.ai SDK</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">JSON Processing</span>
-                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">HTML Parsing</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Backtesting</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Data Analysis</span>
+                        <span className="px-2 py-0.5 bg-gray-800 rounded-full text-xs text-gray-300">Automation</span>
                     </div>
                 </div>
             </div>
@@ -334,10 +265,10 @@ function Resume() {
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
                             <h2 className="text-2xl font-bold text-white">Mayank Agrawal</h2>
-                            <p className="text-gray-300">iOS & Android Developer | Full Stack Engineer</p>
+                            <p className="text-gray-300">Founding Developer | Mobile & AI Engineer</p>
                         </div>
                         <a 
-                            href="https://mayank1406.pro/resume.pdf" 
+                            href="/files/resume.pdf" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="mt-4 md:mt-0 inline-flex items-center px-6 py-3 bg-ub-orange text-white rounded-lg hover:bg-opacity-90 transition-colors"
@@ -355,32 +286,58 @@ function Resume() {
                         <div className="mb-6">
                             <div className="flex justify-between items-start">
                                 <div>
-                                    <h4 className="text-lg font-semibold">iOS Developer</h4>
-                                    <p className="text-gray-300">Tech Company • Full-time</p>
+                                    <h4 className="text-lg font-semibold">Founding Developer</h4>
+                                    <p className="text-gray-300">Rentits • Mathura, India</p>
                                 </div>
-                                <span className="text-gray-400 text-sm">2022 - Present</span>
+                                <span className="text-gray-400 text-sm">Nov 2025 – Present</span>
                             </div>
                             <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
-                                <li>Developed and maintained iOS applications using Swift and SwiftUI</li>
-                                <li>Collaborated with cross-functional teams to define, design, and ship new features</li>
-                                <li>Implemented clean architecture and best practices for mobile development</li>
-                                <li>Optimized app performance and reduced crash rates by 40%</li>
+                                <li>Designed and implemented the end-to-end architecture of a sharing-economy platform from MVP to production.</li>
+                                <li>Built AI-driven recommendation features to improve discovery and user engagement.</li>
+                                <li>Developed and maintained cross-platform mobile apps in Flutter with a focus on performance and scalability.</li>
                             </ul>
                         </div>
 
                         <div className="mb-6">
                             <div className="flex justify-between items-start">
                                 <div>
-                                    <h4 className="text-lg font-semibold">Full Stack Developer</h4>
-                                    <p className="text-gray-300">Startup • Internship</p>
+                                    <h4 className="text-lg font-semibold">Freelance Mobile Engineer (Android & iOS)</h4>
+                                    <p className="text-gray-300">Remote</p>
                                 </div>
-                                <span className="text-gray-400 text-sm">2021 - 2022</span>
+                                <span className="text-gray-400 text-sm">Jun 2020 – Nov 2025</span>
                             </div>
                             <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
-                                <li>Built responsive web applications using React, Node.js, and MongoDB</li>
-                                <li>Implemented RESTful APIs and integrated third-party services</li>
-                                <li>Participated in code reviews and team meetings</li>
-                                <li>Contributed to the development of new features and bug fixes</li>
+                                <li>Built and shipped native iOS and Android applications across diverse device constraints and OS versions.</li>
+                                <li>Integrated REST APIs, authentication flows, and backend services while meeting store guidelines.</li>
+                                <li>Implemented offline-first architectures, background processing, and data caching for reliability.</li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-6">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">Microsoft Learn Student Ambassador (MLSA)</h4>
+                                    <p className="text-gray-300">Microsoft • Remote</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">Apr 2025 – Nov 2025</span>
+                            </div>
+                            <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
+                                <li>Conducted technical workshops on Azure fundamentals and cloud-native development.</li>
+                                <li>Mentored students on deployment, system design basics, and software engineering best practices.</li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-2">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">Open Source Contributor</h4>
+                                    <p className="text-gray-300">Hacktoberfest • Remote</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">Oct 2025</span>
+                            </div>
+                            <ul className="mt-2 text-gray-300 list-disc list-inside space-y-1">
+                                <li>Contributed bug fixes and performance improvements to open-source repositories.</li>
+                                <li>Collaborated with maintainers through reviews and pull requests in distributed teams.</li>
                             </ul>
                         </div>
                     </div>
@@ -391,11 +348,21 @@ function Resume() {
                             <div className="flex justify-between items-start">
                                 <div>
                                     <h4 className="text-lg font-semibold">GLA University, Mathura</h4>
-                                    <p className="text-gray-300">Bachelor of Technology in Computer Science & Engineering</p>
+                                    <p className="text-gray-300">Bachelor of Technology (B.Tech) – Computer Science</p>
                                 </div>
-                                <span className="text-gray-400 text-sm">2020 - 2024</span>
+                                <span className="text-gray-400 text-sm">Aug 2024 – Sep 2028 (Expected)</span>
                             </div>
-                            <p className="mt-1 text-gray-300 text-sm">CGPA: [Your CGPA] / 10.0</p>
+                            <p className="mt-1 text-gray-300 text-sm">Focus: Artificial Intelligence & Machine Learning</p>
+                        </div>
+
+                        <div className="mb-2">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="text-lg font-semibold">Babu Daudayal Saraswati Vidhya Mandir, Mathura</h4>
+                                    <p className="text-gray-300">Class 12th – Science Stream</p>
+                                </div>
+                                <span className="text-gray-400 text-sm">Completed 2024</span>
+                            </div>
                         </div>
                     </div>
 
@@ -403,26 +370,53 @@ function Resume() {
                         <h3 className="text-xl font-semibold mb-4 text-ub-orange">Skills</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <h4 className="font-medium text-gray-200 mb-2">Mobile Development</h4>
+                                <h4 className="font-medium text-gray-200 mb-2">Languages</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Swift</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">SwiftUI</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">React Native</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Java</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Kotlin</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Python</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Dart</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">JavaScript</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">SQL</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">C++</span>
                                 </div>
                             </div>
                             <div>
-                                <h4 className="font-medium text-gray-200 mb-2">Web Development</h4>
+                                <h4 className="font-medium text-gray-200 mb-2">Mobile Development</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Next.js</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Node.js</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Express</span>
-                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">MongoDB</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Flutter</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">iOS (Swift)</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Android (Kotlin/Java)</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="font-medium text-gray-200 mb-2">AI / ML</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Large Language Models (LLMs)</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">NLP</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Supervised Learning</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Prompt Engineering</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="font-medium text-gray-200 mb-2">Cloud & Tools</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Microsoft Azure</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Firebase</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Google Cloud Platform</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Git</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">GitHub</span>
+                                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">CI/CD</span>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-6 mt-6">
+                        <h3 className="text-xl font-semibold mb-4 text-ub-orange">Certifications</h3>
+                        <ul className="text-gray-300 list-disc list-inside space-y-2">
+                            <li>Microsoft Certified: Azure Fundamentals</li>
+                            <li>Supervised Machine Learning (Regression and Classification)</li>
+                            <li>Google Cloud: The Arcade Certification Zone (Oct 2024)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
