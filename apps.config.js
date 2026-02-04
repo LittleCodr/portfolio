@@ -103,14 +103,14 @@ const apps = [
         screen: () => {},
     },
     {
-        id: "vidhyaai",
-        title: "VidhyaAI",
+        id: "rentits",
+        title: "Rentits",
         icon: './themes/Yaru/apps/tars.svg',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://mayank1406.pro/vidhyaai"
+        url: "https://rentits.in"
     },
 ]
 
