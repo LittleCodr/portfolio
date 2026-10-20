@@ -246,3 +246,88 @@ input[type=range].ubuntu-slider::-webkit-slider-thumb {
 .list-arrow {
     list-style: "⇀";
 }
+
+/* Developer Mode Keyframes & Animations */
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes pulseSlow {
+    0%, 100% {
+        opacity: 0.35;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes pulseGentle {
+    0%, 100% {
+        box-shadow: 0 0 25px rgba(233, 84, 32, 0.25);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(56, 189, 248, 0.4);
+    }
+}
+
+@keyframes floatAnim {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes shimmerAnim {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 22s linear infinite;
+}
+
+.animate-spin-reverse {
+    animation: spinReverse 16s linear infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 7s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+    animation: pulseGentle 4s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: floatAnim 4s ease-in-out infinite;
+}
+
+.animate-float-delay {
+    animation: floatAnim 4s ease-in-out infinite 2s;
+}
+
+.animate-shimmer {
+    animation: shimmerAnim 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
